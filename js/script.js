@@ -12,7 +12,21 @@ controlla che sia nella lista di chi può accedere, stampa un messaggio appropri
 //array emails
 const email = ['antonio@gmail.com','rosa@gmail.com','danilo@gmail.com','stefano@gmail.com'];
 
-console.table(email)
+console.table(email);
 
 //prompt richiesta email
-let user = prompt('Inserisci la tua email','rosa@gmail.com')
+let user = prompt('Inserisci la tua email','rosa@gmail.com');
+
+//check email
+let userEmail = email[i];
+
+    if(user === userEmail){
+        console.log('accesso riuscito');
+        
+    }else{
+
+        console.log('utente non registrato');
+    }
+
+
+    
