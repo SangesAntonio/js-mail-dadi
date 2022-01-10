@@ -12,8 +12,17 @@ let cpuNumber=Math.floor(Math.random() * 6 + 1);
 let playerNumber=Math.floor(Math.random() * 6 + 1);
 
 //stampo del risultato
-console.log(playerNumber)
 console.log(cpuNumber)
+console.log(playerNumber)
 
 //calcolo vincitore
-let result=false
+
+if(playerNumber === cpuNumber){
+    console.log('Pareggio')
+
+}else if(playerNumber > cpuNumber){
+    console.log('Hai vinto')
+
+}else{
+    console.log('hai perso')
+}
