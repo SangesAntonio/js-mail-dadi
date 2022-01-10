@@ -18,15 +18,18 @@ console.table(email);
 let user = prompt('Inserisci la tua email','rosa@gmail.com');
 
 //check email
-let userEmail = email[i];
 
-    if(user === userEmail){
-        console.log('accesso riuscito');
-        
-    }else{
+let found=false; 
 
-        console.log('utente non registrato');
-    }
-
-
+for(let i=0; i < email.length; i++){
     
+    if(user === email[i]){
+        found=true;
+    }
+}
+
+if(found){
+    console.log('accesso riuscito');
+}else{
+        console.log('utente non registrato');
+}
